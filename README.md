@@ -10,7 +10,8 @@ You can use this module in your Terraform configuration by including it as a mod
 
 ```hcl
 module "bastion_host" {
-  source                = "github.com/george-markou/Terraform-Azure//Network/bastionHost"
+  source                = "george-markou/bastion-host/azurerm"
+  version               = "1.0.0""
   resource_group_name   = "my-resource-group"
   location              = "eastus"
   pip_name              = "my-bas-pip-01"
