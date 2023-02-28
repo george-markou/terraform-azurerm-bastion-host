@@ -1,3 +1,7 @@
+provider "azurerm" {
+  features {}
+}
+
 module "bastion_host" {
   source                = "george-markou/bastion-host/azurerm"
   version               = "1.0.0""
